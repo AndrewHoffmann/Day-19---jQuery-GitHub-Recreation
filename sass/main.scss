@@ -1,0 +1,15 @@
+/* ccc */
+
+h1, h2, h3, h4, h5, h6, i, p, li {
+	font-size: 15px;
+	text-align: center;
+
+
+
+/* Make stack vertically (one column) when browser "on sufficiently small screens" */
+@media screen and (max-width: 990px) {
+	.whole {
+		width: 75%;
+		display: block;
+	}
+}
