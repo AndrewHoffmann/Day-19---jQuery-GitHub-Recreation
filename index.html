@@ -2,26 +2,116 @@
 <html>
 <head>
 	<title>GitHub Recreation Our 19th Website</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <!-- Bootstrap for HTML -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
 
+<body class="container-fluid row">
 
-    <div id="bg">
-        <form id='weather' action='' method='post'>
-            <input id='Location' type='text' class='new-todo' placeholder='Location'>
-        </form> 
-    
-    	<h1></h1>
+<header class="col-md-12">
+    <span class="mega-octicon octicon-mark-github"></span>
+    <form id='search' action='' method='post'>
+        <input id='search' class='form control' type='text' placeholder='Search GitHub'>
+    </form> 
+    <ul id="leftNav">
+        <li>Explore</li>
+        <li>Gist</li>
+        <li>Blog</li>
+        <li>Help</li>
+    </ul>
+    <ul id="rightNav">      <!-- bring profilePic div up here??? -->
+        <li><img src="images/Silicon_Valley_Richard.jpg" alt=""> AndrewHoffmann</li>
+        <li><span class="mega-octicon octicon-plus"></span><span class="mega-octicon octicon-triangle-down"></span></li>
+        <li><span class="mega-octicon octicon-inbox"></span></li>
+        <li><span class="mega-octicon octicon-gear"></span></li>
+        <li><span class="mega-octicon octicon-sign-out"></span></li>
+    </ul>
+</header>
 
-    	<div id="weatherGoesHere">
-    	</div>
+<div class="container"> <!-- will center -->
+
+    <div class="row">
+
+        <div class="col-md-3 personalInfo">     <!-- personal info placeholders for now, javascript / User API will overwrite --> 
+            <div class="profilePic"><img src="" alt="">
+            </div>
+            <div class="name">
+            </div>
+            <div class="userName">
+            </div>
+            
+            <div><span class="companySchool mega-octicon octicon-repo-forked"></span> The Iron Yard
+            </div>
+            <div><span class="location mega-octicon octicon-location"></span>
+            </div>
+            <div><span class="blog mega-octicon octicon-link"></span> 
+            </div>
+            <div><span class="joined mega-octicon octicon-clock"></span>
+            </div>
+
+            <div class="track clearfix">     <!-- clearfix helps align -->
+                <div class="col-md-6">
+                    <div class="followers">
+                        <span class="replaceFollowers">13</span>
+                        <h3>Followers</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="following">
+                        <span class="replaceFollowing">77</span>
+                        <h3>Following</h3>   
+                    </div>
+                </div>             
+            </div>
+        </div>
+
+        <div class="col-md-9">    <!-- T A B s -->
+
+            <!-- Nav tabs - from http://getbootstrap.com/javascript/#tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                
+                <li role="presentation" class="active"><a href="#contributions" aria-controls="contributions" role="tab" data-toggle="tab"><span class="mega-octicon octicon-diff-added"></span> Contributions</a></li>
+                
+                <li role="presentation"><a href="#repositories" aria-controls="repositories" role="tab" data-toggle="tab"><span class="mega-octicon octicon-repo"></span> Repositories</a></li>
+                
+                <li role="presentation"><a href="#publicActivity" aria-controls="publicActivity" role="tab" data-toggle="tab"><span class="mega-octicon octicon-rss"></span> Public activity</a></li>
+                
+                <button id="editProfileButton"><span class="mega-octicon octicon-pencil"></span> Edit profile</button>
+            </ul>
+
+            <!-- Tab panes - from http://getbootstrap.com/javascript/#tabs -->
+            <div class="tab-content">
+
+                <div role="tabpanel" class="tab-pane active" id="contributions">Not applicable</div>     <!-- nothing here, leave N/A -->   
+
+                <div role="tabpanel" class="tab-pane" id="repositories">
+                    <div class="repositoriesGoHere">
+                        <input placeholder="Search..." type="text">
+                    </div> 
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="publicActivity">  
+                </div>
+
+            </div>
+        </div>
     </div>
+</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<!-- to link to jQuery -->
+<!-- to link to jQuery, always put first -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Bootstrap for JavaScript, put AFTER jQuery -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<!-- moment js cdn (library that allows moment in JS to be used) -->
+
 <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script> <!-- to link with JavaScript -->
 
 </body>

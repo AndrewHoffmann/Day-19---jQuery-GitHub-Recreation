@@ -1,34 +1,127 @@
-/* */
 h1, h2, h3, h4, h5, h6, i, p, li {
   font-size: 15px;
   text-align: center; }
 
-* {
-  box-sizing: border-box; }
-
 body {
-  color: #1D0F48;
-  font-size: 20px; }
-  body #Location {
-    margin-left: 45%;
-    margin-top: 5px; }
-  body #bg {
-    background-image: url("http://www.wallpaperscharlie.com/wp-content/uploads/2016/05/Snowfall-HD-Backgrounds-14.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    width: 100%; }
-  body h1 {
-    font-size: 50px;
-    text-align: center; }
-  body #weatherGoesHere {
-    margin-left: 35px;
-    margin-top: 125px; }
-    body #weatherGoesHere div {
-      width: 13%; }
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF; }
 
-/* Make stack vertically (one column) when browser "on sufficiently small screens" */
-@media screen and (max-width: 990px) {
-  .whole {
-    width: 75%;
-    display: block; } }
+.container {
+  width: 90%; }
+
+header {
+  background-color: #F4F3F3;
+  width: 90%;
+  height: 75px; }
+  header img {
+    margin-bottom: 5px; }
+  header form {
+    display: inline-block; }
+  header ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 30px; }
+    header ul li {
+      display: inline-block;
+      margin-right: 20px;
+      color: #4D4C4C;
+      list-style: none; }
+      header ul li:hover {
+        color: #ADD8E6; }
+  header #rightNav {
+    float: right; }
+    header #rightNav img {
+      height: 20px;
+      width: 20px;
+      margin-bottom: 5px; }
+
+.personalInfo span, .personalInfo p {
+  display: inline-block; }
+
+.personalInfo img {
+  height: 350px;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-left: 5px; }
+
+.personalInfo .userName {
+  border-bottom: 2px solid grey; }
+
+.personalInfo .companySchool {
+  margin-top: 10px; }
+
+.personalInfo .track {
+  text-align: center;
+  color: blue;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  padding: 15px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.personalInfo ul {
+  /* remove?  took away followers as UL */
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 5px;
+  margin-top: 30px; }
+  .personalInfo ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    color: #4D4C4C;
+    list-style: none; }
+    .personalInfo ul li:hover {
+      color: #ADD8E6; }
+
+/* Style the tab */
+div.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; }
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s; }
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: #ddd; }
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  background-color: #ccc; }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none; }
+
+#repositories {
+  margin-top: 20px; }
+  #repositories .repositoriesGoHere {
+    margin-bottom: 20px; }
+    #repositories .repositoriesGoHere h2 {
+      margin-top: 0px; }
+
+#publicActivity {
+  margin-top: 20px; }
+  #publicActivity .publicActivity {
+    margin-bottom: 20px; }
+    #publicActivity .publicActivity h2 {
+      margin-top: 0px; }
+  #publicActivity .smallActivityPic {
+    max-width: 30px; }
+
+#editProfileButton {
+  float: right;
+  margin-top: 10px; }
